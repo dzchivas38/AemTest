@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-07-19T16:08:15.836+07:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/aap/templates/homepage"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="The description that is assigned to the template. version 2"
+        sling:resourceType="aap/components/page/homepage"
+        navTitle="TestPageTestPageTestPage"
+        pageTitle="TestPageTestPage"/>
+</jcr:root>
