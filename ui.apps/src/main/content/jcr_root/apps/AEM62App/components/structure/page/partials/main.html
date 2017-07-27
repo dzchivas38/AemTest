@@ -1,22 +1,80 @@
 <!--/*
     Copyright 2015 Adobe Systems Incorporated
-  
+
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
-  
+
         http://www.apache.org/licenses/LICENSE-2.0
-  
+
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
 */-->
+<link href="/content/AEM62App/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="/content/AEM62App/jquery-3.2.1.min.js"></script>
+<script src="/content/AEM62App/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="/content/AEM62App/angular.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 <div class="page__main" data-sly-use.main="main.js">
+    <link href="/content/AEM62App/custom.css" rel="stylesheet">
     <header class="page__header">
-        <div class="page__logo" data-sly-resource="logo"></div>
-        <nav class="page__topnav" data-sly-resource="topnav"></nav>
+        <!--<div class="page__logo" data-sly-resource="logo"></div>-->
+        <!--<nav class="page__topnav" data-sly-resource="topnav"></nav>-->
+        <!--<div class="row image-background-topnav" style="background-image: url('/content/AEM62App/OD2SPP0.png');min-height: 412px;">-->
+
+        <!--</div>-->
+        <div id="themeSlider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#themeSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#themeSlider" data-slide-to="1"></li>
+                <li data-target="#themeSlider" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="imgOverlay"></div>
+                    <img src="/content/AEM62App/OD2SPP0.png" alt="First slide">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imgOverlay"></div>
+                    <img src="/content/AEM62App/OD2SPP0.png" alt="Second slide">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+
+            <a class="left carousel-control" href="#themeSlider" data-slide="prev">
+                <span class="fa fa-chevron-left"></span>
+            </a>
+            <a class="right carousel-control"href="#themeSlider" data-slide="next">
+                <span class="fa fa-chevron-right"></span>
+            </a>
+            <div class="col-sm-12 col-xs-12 row-top-main">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <span style="color: white" class="navbar-brand" href="#">SHOPPING MALL</span>
+                        </div>
+                        <ul class="nav navbar-nav" style="float: right;">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">T-Shirt</a></li>
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Sub-menu</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">ABOUT US</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <div class="page__title" data-sly-resource="${'title' @ decorationTagName='div'}"></div>
@@ -26,3 +84,4 @@
         <p class="page__copyright">${"&copy; {0} AEM62App Site. All rights reserved." @ i18n, format=main.year, context='html'}</p>
     </footer>
 </div>
+
