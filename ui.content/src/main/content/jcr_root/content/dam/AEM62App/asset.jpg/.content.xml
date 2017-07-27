@@ -9,14 +9,14 @@
         cq:parentPath="/content/dam/AEM62App"
         dam:relativePath="AEM62App/asset.jpg"
         dam:s7damType="Image"
-        jcr:lastModified="{Date}2017-07-19T10:28:02.789+07:00"
+        jcr:lastModified="{Date}2017-07-21T10:34:39.878+07:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
             dam:Bitsperpixel="{Long}24"
             dam:ColorSpace="{Long}-1"
             dam:ExifOffset="{Long}232"
-            dam:extracted="{Date}2017-07-19T10:28:00.037+07:00"
+            dam:extracted="{Date}2017-07-21T10:34:36.393+07:00"
             dam:Fileformat="JPEG"
             dam:JpgFromRawLength="{Long}988"
             dam:JpgFromRawStart="{Long}382"
